@@ -1,0 +1,16 @@
+#phaselistTEMP {
+    width: 30%;
+    float: left;
+}
+
+#phaselistTEMP a {
+    text-decoration: none;
+    color: rgb(71, 1, 1);
+    padding-left: 50px;
+}
+
+#phasemap {
+    /* padding-left: 150px; */
+    width: 30%;
+    float: left;
+}
