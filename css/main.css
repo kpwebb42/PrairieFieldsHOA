@@ -47,6 +47,7 @@ header {
     width: 90%;
     min-width: 750px;
     min-height: 100%;
+    max-width: 1000px;
     background-color: #FEF6EB;
     display: flex;
     flex-direction: column;
