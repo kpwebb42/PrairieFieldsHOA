@@ -37,6 +37,7 @@ header {
 }
 
 #content {
+    position: relative;
     margin: auto;
     width: 90%;
     min-width: 750px;
@@ -44,29 +45,44 @@ header {
     background-color: #FEF6EB;
     display: flex;
     flex-direction: column;
-    -webkit-flex: 1;
-    flex: 1;
 }
 
 nav {
     background-color: #fdd2af;
     width: 150px;
     min-width: 150px;
-    /* height: inherit; */
     min-height: 100%;
     position: absolute;
     display: flex;
-    /* flex-direction: column; */
-    flex: 1;
+    height: 100%;
 }
 
 #navpanel {
-    /* padding-top: 30px; */
+    margin-top: -16px;
     position: -webkit-sticky;
     position: sticky;
     width: inherit;
     min-width: inherit;
     padding-bottom: 200px;
+    z-index: 99;
+}
+
+#navpanel ul {
+    list-style-position: inside;
+    padding-top: 0;
+    padding-left:0;
+    list-style: none;
+}
+
+#navpanel li ul {
+    display: none;
+}
+
+#navpanel li:hover ul {
+    display: block;
+    position: absolute;
+    padding-left: 150px;
+    margin-top: -44px;
 }
 
 .navbutton:link, .navbutton:visited {
@@ -84,10 +100,11 @@ nav {
     text-align: center;
     display: inline-block;
     position: sticky;
+    z-index: 100;
 }
 
-.navbutton:hover {
-    background-color: #ffb67f;
+.navbutton:hover, .navbuttonSub:hover {
+    background-color: #ffb47f;
     background: -moz-linear-gradient(#ffb67f, #af7851);
     background: -webkit-linear-gradient(#ffb67f, #af7851);
     background: -o-linear-gradient(#ffb67f, #af7851);
@@ -102,10 +119,29 @@ nav {
     background: linear-gradient(#ff7f24, #a85319);  
 }
 
+.navbuttonSub {
+    width: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    background: #fdd2af;
+    background: -moz-linear-gradient(#fdd2af, #af7851);
+    background: -webkit-linear-gradient(#fdd2af, #af7851);
+    background: -o-linear-gradient(#fdd2af, #af7851);
+    background: linear-gradient(#fdd2af, #af7851);    
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: sticky; 
+}
+
 main {
     float: left;
     padding-left: 150px;
     margin: 30px;
+    position: static;
+    z-index: 98;
 }
 
 .pageHeading {
@@ -128,7 +164,7 @@ main {
 }
 
 footer {
-    height: 60px;
+    height: 40px;
     background-color: #808080;
     position: static;
     left: 0;
@@ -139,25 +175,37 @@ footer {
 #copy {
     color: #404040;
     float: left;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 6%;
 }
 
 #mail {
     float: right;
-    width: 50px;
-    height: 50px;
-    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    padding-top: 7px;
     padding-right: 6%;
 }
 
 #facebook {
     float: right;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding-top: 10px;
     padding-right: 20px;
 }
+
+/* #nextdoor {
+    float: right;
+    width: 20px;
+    height: 15px;
+    padding-top: 15px;
+    padding-right:20px;
+} */
+
+
+
+
 
 
 
