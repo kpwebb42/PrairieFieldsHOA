@@ -5,6 +5,11 @@ html {
     overflow: auto;
 }
 
+a {
+    color: navy;
+    text-decoration: none;
+}
+
 body {
     background-color: #BC641C;
     font-family: Arial, Helvetica, sans-serif;

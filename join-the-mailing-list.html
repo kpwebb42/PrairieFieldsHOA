@@ -5,63 +5,25 @@
         <title>Prairie Fields HOA</title>
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#insert_header").load("header.html");
+            })
+            $(function(){
+                $("#insert_nav").load("nav.html");
+            });
+            $(function(){
+                $("#insert_footer").load("footer.html");
+            })
+        </script>
         <link rel="icon" type="image/png" href="favicon.png">
     </head>
 
     <body>
-        <header>
-            <div id="pflogo">
-                <a href="index.html"><img src="img/PFLogo-Better.png"></a>
-                <p><b>Savoy, Illinois</b></p>
-            </div>
-        </header>
+        <div id="insert_header"></div>
         <div id="content">
-            <nav>
-                <div id="navpanel">
-                    <ul>
-                        <li><a href="index.html" class="navbutton"><b>Home</b></a></li>
-                        <li><a href="announcements.html" class="navbutton"><b>Announcements</b></a></li>
-                        <li><a href="board.html" class="navbutton"><b>Board</b></a>
-                            <ul>
-                                <li><a href="meeting-agenda-and-minutes.html" class="navbuttonSub">Meeting Agenda and Minutes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="committees.html" class="navbutton"><b>Committees</b></a>
-                            <ul>
-                                <li><a href="architectural_control_committee.html" class="navbuttonSub">Architectural Control</a></li>
-                                <li><a href="communications_committee.html" class="navbuttonSub">Communications</a></li>
-                                <li><a href="election_committee.html" class="navbuttonSub">Elections</a></li>
-                                <li><a href="events_committee.html" class="navbuttonSub">Events</a></li>
-                                <li><a href="welcoming_committee.html" class="navbuttonSub">Welcoming</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="covenants.html" class="navbutton"><b>Covenants</b></a>
-                            <ul>
-                                <li><a href="covenant_enforcement.html" class="navbuttonSub">Covenant Enforcement</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="dues.html" class="navbutton"><b>Dues</b></a>
-                            <ul>
-                                <li><a href="dues-statements--closing-letter.html" class="navbuttonSub">Dues Statements / Closing Letters</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="faqs.html" class="navbutton"><b>FAQs</b></a>
-                            <ul>
-                                <li><a href="developer-information.html" class="navbuttonSub">Developer Information</a></li>
-                                <li><a href="bylaws.html" class="navbuttonSub">Bylaws</a></li>
-                                <li><a href="community-links.html" class="navbuttonSub">Community Links</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html" class="navbutton"><b>Contact</b></a>
-                            <ul>
-                                <li><a href="join-the-mailing-list.html" class="navbuttonSub">Join the Mailing List</a></li>
-                                <li><a href="email-archives.html" class="navbuttonSub">Email Archives</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div id="insert_nav"></div>
             
             <main>
                 <div class="pageHeading">
@@ -85,13 +47,6 @@
             </main>
         </div>
 
-
-        <footer>
-            <div id="copy"><i><b>&copy 2017 Prairie Fields Homeowners Association</b></i></div>
-            <div id="socialMedia">
-                    <a href="mailto:board@prairiefieldshoa.com"><img id="mail" src="img/email.png"></a>
-                    <a href="https://www.facebook.com/PFHOA"><img id="facebook" src="img/facebook.png"></a>
-                </div>
-        </footer>
+        <div id="insert_footer"></div>
     </body>
 </html>

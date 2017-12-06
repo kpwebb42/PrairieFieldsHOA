@@ -6,17 +6,25 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dues.css">        
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#insert_header").load("header.html");
+            })
+            $(function(){
+                $("#insert_nav").load("nav.html");
+            });
+            $(function(){
+                $("#insert_footer").load("footer.html");
+            })
+        </script>
         <link rel="icon" type="image/png" href="favicon.png">
     </head>
 
     <body>
-        <header>
-            <!--#include file="header.html" -->
-        </header>
-        <div id="content">
-            
-            
+        <div id="insert_header"></div>
+        <div id="content"> 
+            <div id="insert_nav"></div>
             <main>
                 <div class="pageHeading">
                     Dues
@@ -51,14 +59,7 @@
                 </div>
             </main>
         </div>
-
-
-        <footer>
-            <div id="copy"><i><b>&copy; 2017 Prairie Fields Homeowners Association</b></i></div>
-            <div id="socialMedia">
-                    <a href="mailto:board@prairiefieldshoa.com"><img id="mail" src="img/email.png"></a>
-                    <a href="https://www.facebook.com/PFHOA"><img id="facebook" src="img/facebook.png"></a>
-                </div>
-        </footer>
+        
+        <div id="insert_footer"></div>  
     </body>
 </html>
