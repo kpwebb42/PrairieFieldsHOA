@@ -47,6 +47,7 @@ header {
     width: 90%;
     min-width: 750px;
     min-height: 100%;
+    max-width: 1250px;
     background-color: #FEF6EB;
     display: flex;
     flex-direction: column;
@@ -64,8 +65,8 @@ nav {
 
 #navpanel {
     margin-top: -16px;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    position: absolute;
     width: inherit;
     min-width: inherit;
     padding-bottom: 200px;
@@ -104,7 +105,7 @@ nav {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    position: sticky;
+    position: relative;
     z-index: 100;
 }
 
@@ -138,7 +139,7 @@ nav {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    position: sticky; 
+    position: relative; 
 }
 
 main {
@@ -189,7 +190,9 @@ footer {
     width: 25px;
     height: 25px;
     padding-top: 7px;
-    padding-right: 6%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5%;
 }
 
 #facebook {
@@ -197,7 +200,9 @@ footer {
     width: 20px;
     height: 20px;
     padding-top: 10px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
 }
 
 /* #nextdoor {
@@ -217,4 +222,9 @@ footer {
 .sectionHeader {
     font-size: 24px;
     color: #96AFFD;
+}
+
+#smalltext {
+    font-size: 12px;
+    color: grey;
 }
