@@ -43,20 +43,21 @@
                         Check - Make check out to: Prairie Fields HOA.  You can deposit it in the PF HOA Drop Box 
                         on Prairie Rose Lane or send it to PO Box 478, Savoy IL 61874.
                 </p>
-                <form>
-                    <b>Your Name</b><br>
-                    <input name="firstname" placeholder="First Name">
-                    <input name="lastname" placeholder="Last Name" style="margin-left: 50px;"><br>
-                    <b>Your Email Address</b><br>
-                    <input name="email" size="59"><br>
-                    <b>Your Phone Number</b><br>
-                    <input name="phone" size="59"><br>
-                    <b>Current Owner Name</b><br>
-                    <input name="ownername" size="59"><br>
-                    <b>Prairie Field Property Address</b><br>
-                    <input name="propertyaddress" size="59"><br>
-                    <b>Closing Date</b><br>
-                    <input name="closingdate" size="59"><br>
+                <div class="sectionHeader">Dues Statement / Closing Letter Request</div>
+                <form action="https://www.formspree.io/kwebb13@stu.parkland.edu">
+                    <b>Your Name</b><span class="required">*</span><br>
+                    <input name="firstname" placeholder="First Name" required>
+                    <input name="lastname" placeholder="Last Name" style="margin-left: 50px;" required><br>
+                    <b>Your Email Address</b><span class="required">*</span><br>
+                    <input name="email" size="59" required><br>
+                    <b>Your Phone Number</b><span class="required">*</span><br>
+                    <input name="phone" size="59" required><br>
+                    <b>Current Owner Name</b><span class="required">*</span><br>
+                    <input name="ownername" size="59" required><br>
+                    <b>Prairie Field Property Address</b><span class="required">*</span><br>
+                    <input name="propertyaddress" size="59" required><br>
+                    <b>Closing Date</b><span class="required">*</span><br>
+                    <input name="closingdate" size="59" required><br>
                     <b>Comments</b><br>
                     <textarea name="comments" rows="20" cols = "60"></textarea><br>
                     <b>Attach Any Forms that Need to be Completed Here</b><br>
